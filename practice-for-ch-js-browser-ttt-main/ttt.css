@@ -1,4 +1,7 @@
+h1 {
+    text-align: center;
 
+}
 
 ul { 
     list-style-type: none; 
@@ -7,10 +10,6 @@ ul {
     flex-wrap: wrap;
     width: 200px;
     margin: auto;
-    
-    
-    
-    
 
 }  
 
@@ -20,9 +19,25 @@ li {
     display: block;
     height: 50px;
     width: 50px;
-
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 li:hover {
     background-color: yellow;
+}
+
+.marked {
+    background-color: white;
+}
+
+.game-over {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+.winner-mark {
+    background-color: green;
 }
