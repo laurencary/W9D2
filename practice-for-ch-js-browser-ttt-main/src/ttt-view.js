@@ -25,7 +25,7 @@ class View {
     pos = JSON.parse(pos)
     this.game.playMove(pos);
     const mark = this.game.currentPlayer;
-    console.log(mark);
+    // console.log(mark);
     e.target.innerText = mark;
     e.target.classList.add("marked");
     this.handleGameOver();
@@ -38,11 +38,17 @@ class View {
     if (this.game.winner()) {
       const gameOver = document.querySelector(".game-over");
       gameOver.innerText = `You won, ${this.game.currentPlayer}!`
-
-      const li = document.querySelector('li');
-      if (li.value === this.game.winner()) {
-        li.target.classList.add('winner-mark');
-      }
+      
+      const li = document.querySelectorAll('li');
+      console.log(li)
+      li.forEach( (el) => {
+        console.log(el.innerText)
+        if (el.innerText === this.game.currentPlayer) {
+        
+          el.classList.add('winner-mark');
+        }
+      });
+       
     }
     ;
     
