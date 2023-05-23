@@ -1,1 +1,28 @@
-/* Your code here */
+
+
+ul { 
+    list-style-type: none; 
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: auto;
+    
+    
+    
+    
+
+}  
+
+li {
+    border: 1px solid black;
+    background-color: gray;
+    display: block;
+    height: 50px;
+    width: 50px;
+
+}
+
+li:hover {
+    background-color: yellow;
+}
